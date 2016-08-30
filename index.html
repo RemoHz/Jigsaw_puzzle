@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Mona Lisa jigsaw puzzle created by Box2D DOM animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="setTimeout(init,1000);">
+
+    <canvas id="canvas" width="100" height="100"></canvas>
+
+    <nav class="panel">
+        <p>All of the images are draggable, just press and drag.</p>
+        <p>Animating a web page (DOM) objects with <a href="http://code.google.com/p/box2dweb/">Box2D-Web</a>. View the source to learn more on how it works.</p>
+        <button id="resetButton">Reset</button>
+        <button id="removeText">Remove this text</button>
+        <input type="checkbox" id="debugDraw">Debug drawing</input>
+    </nav>
+
+    <div id="container">
+        <article>
+            <!-- First Column -->
+            <div style="left:100px;">
+                <img src="images/1.1.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:100px;top:190px;">
+                <img src="images/1.1.2.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:100px;top:380px;">
+                <img src="images/1.2.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:100px;top:570px;">
+                <img src="images/1.2.2.jpg" width="128" height="190">
+            </div>
+
+            <!-- Second Column -->
+            <div style="left:228px;">
+                <img src="images/2.1.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:228px;top:190px;">
+                <img src="images/2.1.2.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:228px;top:380px;">
+                <img src="images/2.2.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:228px;top:570px;">
+                <img src="images/2.2.2.jpg" width="128" height="190">
+            </div>
+
+            <!-- Thrid Column -->
+            <div style="left:356px;">
+                <img src="images/3.1.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:356px;top:190px;">
+                <img src="images/3.1.2.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:356px;top:380px;">
+                <img src="images/3.2.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:356px;top:570px;">
+                <img src="images/3.2.2.jpg" width="128" height="190">
+            </div>
+
+            <!-- Fourth Column -->
+            <div style="left:484px;">
+                <img src="images/4.1.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:484px;top:190px;">
+                <img src="images/4.1.2.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:484px;top:380px;">
+                <img src="images/4.2.1.jpg" width="128" height="190">
+            </div>
+
+            <div style="left:484px;top:570px;">
+                <img src="images/4.2.2.jpg" width="128" height="190">
+            </div>
+
+        </acticle>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/Box2dWeb-2.1.a.3.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/RequestAnimationFrame.js"></script>
+<script type="text/javascript" src="js/MouseAndTouch.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/DebugMouseDrag.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+            background-color: black;
+        }
+
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+            border: none;
+            color: #fff;
+            font-family: "American Typewriter";
+        }
+        /* Set translateZ to trigger HW acc for CSS3 transforms */
+
+        #container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            -webkit-transform: translate3d(0, 0, 1px);
+            -o-transform: translate3d(0, 0, 1px);
+            -moz-transform: translate3d(0, 0, 1px);
+            -ms-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px);
+            background-color: black;
+            -webkit-perspective: 1000;
+            -webkit-backface-visibility: hidden;
+        }
+
+        #container {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 0.1;
+        }
+        /* Styles for the experiment GUI */
+
+        .panel {
+            font-size: 16px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 360px;
+            z-index: 2;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .panel {
+                width: 250px;
+                font-size: 10px;
+            }
+        }
+        /* Styles for illustrating the example */
+
+        a {
+            color: #FFF;
+            text-decoration: underline;
+        }
+
+        div {
+            position: absolute;
+        }
